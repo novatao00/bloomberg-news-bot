@@ -12,13 +12,15 @@ from crawler.stealth_browser import StealthBrowser
 from rss.fetcher import RSSFetcher
 from selector.article_ranker import ArticleRanker
 from uploader.github_artifacts import GitHubArtifactsUploader
+ 
+# 确保logs目录存在
+os.makedirs('logs', exist_ok=True)
 
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.StreamHandler(sys.stdout),
-        logging.FileHandler('logs/fetcher.log')
+        logging.StreamHandler(sys.stdout)
     ]
 )
 logger = logging.getLogger(__name__)
@@ -104,4 +106,12 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        logger.error("=" * 50)
+        logger.error(f"FATAL ERROR: {str(e)}")
+        logger.error("=" * 50)
+        import traceback
+        logger.error(traceback.format_exc())
+        sys.exit(1)
