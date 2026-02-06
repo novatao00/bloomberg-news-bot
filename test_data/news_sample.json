@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "generated_at": "2024-02-06T00:30:00.000000",
+    "total_articles": 10,
+    "full_content_count": 3,
+    "sources": ["bloomberg", "yahoo", "reuters"]
+  },
+  "articles": [
+    {
+      "id": "abc123",
+      "title": "Fed Signals Potential Rate Cuts as Inflation Cools",
+      "summary": "Federal Reserve officials indicated they are considering lowering interest rates as inflation pressures continue to ease, with several policymakers expressing optimism about the economic outlook.",
+      "link": "https://www.bloomberg.com/news/articles/2024-02-06/fed-signals-rate-cuts",
+      "source": "bloomberg",
+      "category": "markets",
+      "priority": 3,
+      "published": "2024-02-05T22:30:00.000000",
+      "author": "John Smith",
+      "has_full_content": true,
+      "full_content": "Federal Reserve officials signaled on Monday that they are moving closer to cutting interest rates as inflation continues to cool, marking a significant shift in monetary policy stance.\n\nThe central bank's policymakers have been closely watching inflation data, with several indicating they are increasingly comfortable with the pace of price increases moving toward the Fed's 2% target.\n\n\"We are seeing encouraging signs on inflation,\" said Fed Governor Christopher Waller in a speech in Washington. \"If these trends continue, we will have the confidence to begin adjusting policy rates downward.\"\n\nStock markets reacted positively to the comments, with the S&P 500 gaining 0.8% and the Nasdaq rising 1.2% in afternoon trading."
+    },
+    {
+      "id": "def456",
+      "title": "Tech Giants Report Strong Earnings, AI Investments Pay Off",
+      "summary": "Major technology companies exceeded Wall Street expectations in Q4 earnings, with artificial intelligence initiatives driving growth across cloud computing and enterprise software segments.",
+      "link": "https://www.bloomberg.com/news/articles/2024-02-06/tech-earnings",
+      "source": "bloomberg",
+      "category": "tech",
+      "priority": 3,
+      "published": "2024-02-05T21:00:00.000000",
+      "author": "Jane Doe",
+      "has_full_content": true,
+      "full_content": "The world's largest technology companies reported better-than-expected fourth-quarter results, driven primarily by strong performance in cloud services and artificial intelligence-related offerings.\n\nMicrosoft reported revenue of $62 billion, beating analyst estimates of $59.8 billion, with Azure cloud sales growing 30% year-over-year. The company cited increasing enterprise adoption of its AI-powered Copilot products as a key growth driver.\n\nGoogle parent Alphabet posted revenue of $65.1 billion, above projections of $63.2 billion. YouTube ad revenue rebounded strongly, and the company reported significant progress in its AI research and development efforts.\n\n\"AI is becoming a fundamental part of every aspect of our business,\" said Google CEO Sundar Pichai during the earnings call. \"We see tremendous opportunities ahead.\""
+    },
+    {
+      "id": "ghi789",
+      "title": "Oil Prices Surge Amid Middle East Tensions",
+      "summary": "Crude oil prices climbed to their highest level in three months as geopolitical tensions in the Middle East raised concerns about supply disruptions.",
+      "link": "https://finance.yahoo.com/news/oil-prices-middle-east-120000000.html",
+      "source": "yahoo",
+      "category": "markets",
+      "priority": 2,
+      "published": "2024-02-05T20:15:00.000000",
+      "author": "Reuters",
+      "has_full_content": false,
+      "full_content": null
+    },
+    {
+      "id": "jkl012",
+      "title": "Bitcoin Rebounds Above $50,000 as Institutional Interest Grows",
+      "summary": "Bitcoin staged a strong recovery, surging past the $50,000 mark as major financial institutions continue to expand their cryptocurrency offerings.",
+      "link": "https://www.bloomberg.com/news/articles/2024-02-06/bitcoin-rebounds",
+      "source": "bloomberg",
+      "category": "markets",
+      "priority": 3,
+      "published": "2024-02-05T19:45:00.000000",
+      "author": "Mike Johnson",
+      "has_full_content": true,
+      "full_content": "Bitcoin rebounded strongly on Tuesday, reclaiming the $50,000 level for the first time since December, as institutional investors showed renewed interest in the cryptocurrency.\n\nThe price surge came after several major banks announced expanded cryptocurrency services for their clients. Bank of America unveiled plans to launch a crypto custody service, while JPMorgan Chase reported increased client demand for Bitcoin exposure.\n\n\"We are seeing a maturation of the cryptocurrency market,\" said James Bullard, senior analyst at Morgan Stanley. \"Institutional adoption is accelerating, and that's providing strong support for prices.\"\n\nTrading volumes on major exchanges more than doubled compared to the previous week, suggesting growing institutional participation."
+    },
+    {
+      "id": "mno345",
+      "title": "China's Manufacturing Activity Unexpectedly Contracts",
+      "summary": "China's official purchasing managers' index fell below 50 in January, signaling contraction in manufacturing activity and raising concerns about economic recovery.",
+      "link": "https://www.reuters.com/business/china-manufacturing-2024-02-06",
+      "source": "reuters",
+      "category": "business",
+      "priority": 1,
+      "published": "2024-02-05T18:30:00.000000",
+      "author": "Beijing Bureau",
+      "has_full_content": false,
+      "full_content": null
+    },
+    {
+      "id": "pqr678",
+      "title": "Electric Vehicle Sales Hit Record High in 2023",
+      "summary": "Global electric vehicle sales reached 14.1 million units in 2023, representing 35% of all car sales, according to industry data.",
+      "link": "https://www.bloomberg.com/news/articles/2024-02-06/ev-sales-record",
+      "source": "bloomberg",
+      "category": "tech",
+      "priority": 3,
+      "published": "2024-02-05T17:15:00.000000",
+      "author": "Sarah Lee",
+      "has_full_content": false,
+      "full_content": null
+    },
+    {
+      "id": "stu901",
+      "title": "European Markets Rally on ECB Rate Decision",
+      "summary": "European stocks gained after the European Central Bank left interest rates unchanged and signaled a cautious approach to future rate cuts.",
+      "link": "https://finance.yahoo.com/news/ecb-rates-2024-02-06",
+      "source": "yahoo",
+      "category": "markets",
+      "priority": 2,
+      "published": "2024-02-05T16:00:00.000000",
+      "author": "Bloomberg",
+      "has_full_content": false,
+      "full_content": null
+    },
+    {
+      "id": "vwx234",
+      "title": "Gold Price Reaches All-Time High on Safe Haven Demand",
+      "summary": "Gold prices surpassed $2,100 per ounce, hitting a record high as investors seek safe haven assets amid economic uncertainty.",
+      "link": "https://www.bloomberg.com/news/articles/2024-02-06/gold-record",
+      "source": "bloomberg",
+      "category": "markets",
+      "priority": 3,
+      "published": "2024-02-05T15:30:00.000000",
+      "author": "Tom Harris",
+      "has_full_content": false,
+      "full_content": null
+    },
+    {
+      "id": "yza567",
+      "title": "Microsoft Unveils New AI Features for Office Suite",
+      "summary": "Microsoft announced a major update to its Office productivity suite, integrating advanced AI capabilities including automatic document summarization.",
+      "link": "https://www.bloomberg.com/news/articles/2024-02-06/microsoft-ai-office",
+      "source": "bloomberg",
+      "category": "tech",
+      "priority": 3,
+      "published": "2024-02-05T14:45:00.000000",
+      "author": "Emily Chen",
+      "has_full_content": false,
+      "full_content": null
+    },
+    {
+      "id": "bcd890",
+      "title": "Asian Markets Mixed Amid Weak Economic Data",
+      "summary": "Asian stocks showed mixed performance as investors reacted to disappointing economic indicators from Japan and South Korea.",
+      "link": "https://finance.yahoo.com/news/asian-markets-mixed-2024-02-06",
+      "source": "yahoo",
+      "category": "markets",
+      "priority": 2,
+      "published": "2024-02-05T13:15:00.000000",
+      "author": "AFP",
+      "has_full_content": false,
+      "full_content": null
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+rss_sources:
+  bloomberg:
+    markets: "https://feeds.bloomberg.com/markets/news.rss"
+    tech: "https://feeds.bloomberg.com/technology/news.rss"
+    view: "https://feeds.bloomberg.com/view/news.rss"
+    priority: 3  # 最高优先级
+    
+  yahoo:
+    markets: "https://finance.yahoo.com/news/rssindex"
+    tech: "https://finance.yahoo.com/tech/rssindex"
+    priority: 2
+    
+  reuters:
+    business: "https://www.reutersagency.com/feed/?taxonomy=markets&post_type=reuters-best"
+    priority: 1
+
+selection:
+  total_articles: 10
+  full_content_count: 3  # 爬取全文的数量
+  bloomberg_priority: true
+  
+keywords:
+  high:
+    - "market"
+    - "fed"
+    - "rate"
+    - "stock"
+    - "crypto"
+    - "bitcoin"
+    - "ai"
+    - "tech"
+    - "trade"
+    - "economy"
+    - "inflation"
+    - "recession"
+    - "earnings"
+  medium:
+    - "ipo"
+    - "merger"
+    - "acquisition"
+    - "policy"
+    - "regulation"
+    - "oil"
+    - "gold"
+    - "dollar"
+  low:
+    - "sports"
+    - "entertainment"
+    - "lifestyle"
+
+fetching:
+  request_timeout: 30
+  delay_between_requests: 5  # 请求间隔(秒)
+  delay_jitter: 3  # 随机延迟范围
+  max_retries: 3
+  user_agents:
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"

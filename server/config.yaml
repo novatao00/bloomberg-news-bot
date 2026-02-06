@@ -1,0 +1,17 @@
+github:
+  owner: ""  # 你的GitHub用户名
+  repo: ""   # 仓库名
+  
+cache:
+  db_path: "data/cache/news_cache.db"
+  retention_hours: 24
+  
+openai:
+  model: "gpt-4o-mini"
+  max_tokens_title: 100
+  max_tokens_summary: 300
+  max_tokens_content: 1000
+  
+feishu:
+  # 从环境变量读取：FEISHU_APP_ID, FEISHU_APP_SECRET, FEISHU_CHAT_ID
+  retry_count: 3

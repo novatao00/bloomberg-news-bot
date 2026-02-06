@@ -1,0 +1,70 @@
+name: Bloomberg News Fetcher
+
+on:
+  schedule:
+    # UTC时间: 00:30, 04:30, 13:30 (对应北京时间 8:30, 12:30, 21:30)
+    - cron: '30 0,4,13 * * *'
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: '3.10'
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Cache Python dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('github-actions-src/requirements.txt') }}
+    
+    - name: Install dependencies
+      run: |
+        cd github-actions-src
+        pip install -r requirements.txt
+    
+    - name: Install Playwright
+      run: |
+        cd github-actions-src
+        playwright install chromium
+    
+    - name: Add random delay (0-300 seconds)
+      run: |
+        DELAY=$((RANDOM % 300))
+        echo "Waiting ${DELAY} seconds to avoid pattern detection..."
+        sleep $DELAY
+    
+    - name: Fetch and process news
+      run: |
+        cd github-actions-src
+        python main.py
+      env:
+        PYTHONUNBUFFERED: 1
+    
+    - name: Upload news data
+      uses: actions/upload-artifact@v4
+      with:
+        name: news-data-${{ github.run_id }}
+        path: github-actions-src/output/news_*.json
+        retention-days: 2
+        if-no-files-found: error
+    
+    - name: Upload logs
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: logs-${{ github.run_id }}
+        path: github-actions-src/logs/
+        retention-days: 1
+        if-no-files-found: ignore
